@@ -16,10 +16,9 @@
     "img:prod": "imagemin source/img/**/* --out-dir=public/img",
     "styleguide": "styleguide-plus source/css/**/*.styl -o public/styleguide",
     "serve": "browser-sync start --server 'public' -f='public' --no-ghost-mode",
-    "watch": "npm run js:watch & npm-watch",
-    "dev": "npm run watch & npm run serve",
+    "dev": "parallelshell 'npm run serve' 'npm run js:watch' 'npm-watch'",
     "prebuild": "npm run js:lint",
-    "build": "npm run js:prod & npm run css:prod & npm run img:prod"
+    "build": "parallelshell 'npm run js:prod' 'npm run css:prod' 'npm run img:prod' && echo 'MANDA BALA NO DEPLOY!'"
   },
   "watch": {
     "css": {
@@ -45,6 +44,7 @@
     "imagemin-cli": "^3.0.0",
     "minifyify": "^7.3.3",
     "npm-watch": "^0.1.6",
+    "parallelshell": "^2.0.0",
     "snazzy": "^5.0.0",
     "standard": "^8.1.0",
     "stylus": "^0.54.5",

@@ -9,11 +9,11 @@ h1.css('display', 'inline-block')
 h1.css('text-align', 'center')
 h1.css('color', '#fff')
 
-$('body').append(h1)
+$('.container').append(h1)
 
-$('body').css('backgroundColor', 'red')
+$('body').css('backgroundColor', 'black')
 .css('textAlign', 'center')
 
 var sum = require('./teste.js')
 
-console.log(sum(100, 10))
+console.log(sum(100, 11440))
