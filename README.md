@@ -30,8 +30,6 @@ Now, just install all dependencies:
 This boilerplate uses [NPM Scripts](https://www.keithcirkel.co.uk/how-to-use-npm-as-a-build-tool/) for
 tasks automation.
 
-If you are using Windows, you need to use [Git Bash](https://git-for-windows.github.io/) to run these commands properly.
-
 Use `npm run [script]` to run these scripts:
 
 ### `dev`
