@@ -3,23 +3,25 @@
   "private": true,
   "scripts": {
     "js": "browserify source/js/main.js -o public/js/bundle.min.js",
+    "js:watch": "watchify source/js/main.js -o public/js/bundle.min.js -v",
     "js:prod": "npm run js -- -d -p [minifyify --map=bundle.map --output public/js/bundle.map]",
     "js:lint": "standard source/js/**/*.js --verbose | snazzy || exit 0",
+    "js:clear": "del public/js/**/*",
     "css": "stylus -m source/styl/index.styl --include-css -I node_modules -o public/css/style.min.css",
     "css:autoprefixer": "npm run css -- -u autoprefixer-stylus --with \"{browsers: ['> 1%']}\"",
     "css:prod": "npm run css:autoprefixer -- -u csso-stylus",
+    "css:clear": "del public/css/**/*",
     "img": "copy source/img/**/* public/img/",
     "img:clear": "del public/img/**/*",
     "img:prod": "imagemin source/img/**/* --out-dir=public/img",
     "styleguide": "styleguide-plus source/css/**/*.styl -o public/styleguide",
-    "serve": "browser-sync start --server 'public' -f='public' --no-notify --no-ghost-mode",
-    "watch": "npm-watch",
-    "dev": "npm run serve & npm run watch",
+    "serve": "browser-sync start --server 'public' -f='public' --no-ghost-mode",
+    "watch": "npm run js:watch & npm-watch",
+    "dev": "npm run watch & npm run serve",
     "prebuild": "npm run js:lint",
-    "build": "npm run js:prod & npm run css:prod & npm run img:prod && exit 0"
+    "build": "npm run js:prod & npm run css:prod & npm run img:prod"
   },
   "watch": {
-    "js": "source/js/**/*.js",
     "css": {
       "patterns": [
         "source/styl"
@@ -45,10 +47,12 @@
     "npm-watch": "^0.1.6",
     "snazzy": "^5.0.0",
     "standard": "^8.1.0",
-    "stylus": "^0.54.5"
+    "stylus": "^0.54.5",
+    "watchify": "^3.7.0"
   },
   "dependencies": {
     "jquery": "^3.1.0",
+    "lodash": "^4.16.1",
     "normalize.css": "^4.2.0"
   }
 }

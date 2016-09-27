@@ -1,6 +1,16 @@
 # boilerplate
 
+> *Less is more.*
 
+A boilerplate intended to be both fast and productive, but yet simple.
+
+## features
+
+* [NPM Scripts](https://www.keithcirkel.co.uk/how-to-use-npm-as-a-build-tool/)
+* [Browserify](http://browserify.org/)
+* [Stylus](http://stylus-lang.com/)
+* [BrowserSync](https://www.browsersync.io/)
+* [Imagemin](https://github.com/imagemin/imagemin)
 
 ## usage
 
@@ -39,23 +49,31 @@ It runs all `*:prod` tasks in parallel.
 It watches your source files for changes, and call
 the specific task for each sources.
 
-It does not run any `*:prod` task.
+It doesn't run any `*:prod` task, neither launches browser-sync.
 
 ### `serve`
 
-Runs browser-sync.
+It launches [BrowserSync](https://www.browsersync.io/).
 
 ### `js`
 
-It simply runs browserify without compression.
+It runs [Browserify](http://browserify.org/) on your JS code.
 
 ### `js:lint`
 
-Runs your code against Standard.
+Test your code against [Standard](https://github.com/feross/standard).
 
 ### `js:prod`
 
-It runs browserify with minifiyify for compression.
+It runs [Browserify](http://browserify.org/) with minifiyify for compression and sourcemaps.
+
+### `js:watch`
+
+It runs [Watchify](https://github.com/substack/watchify).
+
+### `js:clear`
+
+Clear all files from `public/js`.
 
 ### `css`
 
@@ -65,6 +83,10 @@ It runs Stylus.
 
 It runs Stylus with compression and autoprefixer.
 
+### `css:clear`
+
+Clear all files from `public/css/`;
+
 ### `img`
 
 It just copy your images from your source.
@@ -72,3 +94,11 @@ It just copy your images from your source.
 ### `img:prod`
 
 Compress your images before copying.
+
+### `img:clear`
+
+Clear all files from dest folder (public/img/).
+
+### `styleguide`
+
+Generate Styleguide in `public/styleguide`
