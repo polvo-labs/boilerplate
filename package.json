@@ -15,7 +15,7 @@
     "img:clear": "del public/img/**/*",
     "img:prod": "imagemin source/img/**/* --out-dir=public/img",
     "styleguide": "styleguide-plus source/css/**/*.styl -o public/styleguide",
-    "serve": "browser-sync start --server 'public' -f='public,!**/*.map' --no-ghost-mode --reload-delay 100",
+    "serve": "browser-sync start --server -f='public,!**/*.map' --no-ghost-mode --reload-delay 100 --startPath 'public/'",
     "dev": "parallelshell 'npm run serve' 'npm run js:watch' 'npm-watch'",
     "prebuild": "npm run js:lint",
     "build": "parallelshell 'npm run js:prod' 'npm run css:prod' 'npm run img:prod' && echo 'MANDA BALA NO DEPLOY!'"
