@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "js": "browserify source/js/main.js -o public/js/bundle.min.js",
-    "js:watch": "watchify source/js/main.js -o public/js/bundle.min.js -v",
+    "js:watch": "watchify source/js/main.js -o 'exorcist public/js/bundle.min.js.map > public/js/bundle.min.js' -v -d",
     "js:prod": "npm run js -- -d -p [minifyify --map=bundle.map --output public/js/bundle.map]",
     "js:lint": "standard source/js/**/*.js --verbose | snazzy",
     "js:clear": "del public/js/**/*",
@@ -15,7 +15,7 @@
     "img:clear": "del public/img/**/*",
     "img:prod": "imagemin source/img/**/* --out-dir=public/img",
     "styleguide": "styleguide-plus source/css/**/*.styl -o public/styleguide",
-    "serve": "browser-sync start --server 'public' -f='public' --no-ghost-mode",
+    "serve": "browser-sync start --server 'public' -f='public,!**/*.map' --no-ghost-mode --reload-delay 100",
     "dev": "parallelshell 'npm run serve' 'npm run js:watch' 'npm-watch'",
     "prebuild": "npm run js:lint",
     "build": "parallelshell 'npm run js:prod' 'npm run css:prod' 'npm run img:prod' && echo 'MANDA BALA NO DEPLOY!'"
@@ -41,6 +41,7 @@
     "copy": "^0.3.0",
     "csso-stylus": "0.0.3",
     "del-cli": "^0.2.0",
+    "exorcist": "^0.4.0",
     "imagemin-cli": "^3.0.0",
     "minifyify": "^7.3.3",
     "npm-watch": "^0.1.6",
