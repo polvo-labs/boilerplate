@@ -2,8 +2,8 @@
   "name": "boilerplate",
   "private": true,
   "scripts": {
-    "js": "browserify source/js/main.js -o public/js/bundle.min.js",
-    "js:watch": "watchify source/js/main.js -o \"exorcist public/js/bundle.min.js.map > public/js/bundle.min.js\" -v -d",
+    "js": "browserify source/js/index.js -o public/js/bundle.min.js",
+    "js:watch": "watchify source/js/index.js -o \"exorcist public/js/bundle.min.js.map > public/js/bundle.min.js\" -v -d",
     "js:prod": "npm run js -- -d -p [minifyify --map=bundle.map --output public/js/bundle.map]",
     "js:lint": "standard \"source/js/**/*.js\" --verbose | snazzy",
     "js:clear": "del-cli \"public/js/**/*\"",
@@ -56,8 +56,6 @@
     "watchify": "^3.7.0"
   },
   "dependencies": {
-    "jquery": "^3.1.0",
-    "lodash": "^4.16.1",
     "normalize.css": "^4.2.0"
   }
 }
