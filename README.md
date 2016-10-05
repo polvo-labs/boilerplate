@@ -102,3 +102,11 @@ Clear all files from dest folder (public/img/).
 ### `styleguide`
 
 Generate Styleguide in `public/styleguide`
+
+## css guide
+
+TODO
+
+## js guide
+
+TODO
