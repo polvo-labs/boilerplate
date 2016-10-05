@@ -23,7 +23,7 @@
   "watch": {
     "css": {
       "patterns": [
-        "source/styl"
+        "source/css"
       ],
       "extensions": "styl"
     },
