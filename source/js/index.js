@@ -1,3 +1,3 @@
 'use strict'
 
-console.log('Hello, World!')
+require('./components/HelloWorld').create(document.body)
