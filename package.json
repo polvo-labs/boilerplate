@@ -13,7 +13,7 @@
     "css:clear": "del-cli \"public/css/**/*\"",
     "img": "copy-cli \"source/img/**/*\" \"public/img\"",
     "img:clear": "del-cli \"public/img/**/*\"",
-    "img:prod": "imagemin \"source/img/DSC_0357.jpg\" --out-dir=public/img",
+    "img:prod": "imagemin \"source/img/**/*\" --out-dir=public/img",
     "styleguide": "styleguide-plus \"source/css/**/*.styl\" -o public/styleguide",
     "serve": "browser-sync start --server -f=\"public,!**/*.map\" --no-ghost-mode --reload-delay 100 --startPath \"public/\"",
     "dev": "parallelshell \"npm run serve\" \"npm run js:watch\" \"npm-watch\"",
