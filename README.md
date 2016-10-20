@@ -21,7 +21,7 @@ and [Git](https://git-scm.com/) installed in your machine.
 
 Clone the repository:
 
-`git clone {repository}`
+`git clone https://github.com/polvo-labs/boilerplate.git --depth=1`
 
 Now, just install all dependencies:
 
