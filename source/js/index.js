@@ -1,3 +1,3 @@
 'use strict'
 
-require('./components/HelloWorld').create(document.body)
+require('./components/hello-world')('.js-hello-world')
