@@ -16,8 +16,7 @@ A boilerplate intended to be both fast and productive, but yet simple.
 
 ## usage
 
-Make sure you do have [Node](https://nodejs.org/en/)
-and [Git](https://git-scm.com/) installed in your machine.
+Make sure you do have [Node](https://nodejs.org/en/), [Git](https://git-scm.com/) and [PHP](http://www.php.net/) installed in your machine.
 
 Clone the repository:
 
@@ -53,7 +52,7 @@ It doesn't run any `*:prod` task, neither launches browser-sync.
 
 ### `serve`
 
-It launches [BrowserSync](https://www.browsersync.io/).
+It launches the [PHP built-in](https://secure.php.net/manual/en/features.commandline.webserver.php) server with [BrowserSync](https://www.browsersync.io/).
 
 ### `js`
 
