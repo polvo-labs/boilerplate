@@ -471,4 +471,9 @@ a {
   margin-left: auto;
   margin-right: auto;
 }
+.hello-world {
+  font-weight: bold;
+  font-size: 20px;
+  color: #f00;
+}
 /*# sourceMappingURL=style.min.css.map */
