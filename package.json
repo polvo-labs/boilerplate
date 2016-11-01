@@ -34,6 +34,12 @@
       "extensions": "jpg,jpeg,png,svg,gif"
     }
   },
+  "standard": {
+    "globals": [
+      "jQuery",
+      "$"
+    ]
+  },
   "devDependencies": {
     "autoprefixer-stylus": "^0.10.0",
     "browser-sync": "^2.16.0",
