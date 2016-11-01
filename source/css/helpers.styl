@@ -8,5 +8,38 @@
 // text alignment like `._text-right`.
 //
 // Notice that all helpers must begin with underscore `_`.
-// The only exception for that, is the helper `.container`
 // =============================================================================
+
+// Color helpers
+// -------------
+
+for key, val in $color
+  ._color-{key}
+    color: val
+
+  ._bg-color-{key}
+    background-color: val
+
+// Display helpers
+// ---------------
+
+._block
+  display block
+
+._none
+  display none
+
+._inline-block
+  display inline-block
+
+// Text alignment helpers
+// ----------------------
+
+._text-left
+  text-align left
+
+._text-right
+  text-align right
+
+._text-center
+  text-align center
