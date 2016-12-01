@@ -64,3 +64,10 @@ for key, val in $color
 
 ._text-center
   text-align center
+
+// Font family helpers
+// -------------------
+
+for key, val in $font-family
+  ._font-family-{key}
+    font-family: val
