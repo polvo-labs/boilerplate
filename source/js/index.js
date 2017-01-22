@@ -1,3 +1,5 @@
-'use strict'
+import HelloWorld from './components/hello-world'
 
-require('./components/hello-world')('.js-hello-world')
+const helloWorld = new HelloWorld()
+
+console.log(helloWorld)
