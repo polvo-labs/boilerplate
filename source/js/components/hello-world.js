@@ -1,8 +1,6 @@
-module.exports = function helloWorld (selector) {
-  selector = document.querySelectorAll(selector)
-  Array.prototype.slice.call(selector).forEach(create)
-}
-
-function create (el) {
-  el.innerHTML = 'Hello, World!'
+export default class HelloWorld {
+  constructor (selector = '.js-hello-world') {
+    const element = document.querySelector(selector)
+    element.innerHTML = 'Hello, World!'
+  }
 }

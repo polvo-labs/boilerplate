@@ -8,6 +8,7 @@ A boilerplate intended to be both fast and productive, but yet simple.
 
 * [NPM Scripts](https://www.keithcirkel.co.uk/how-to-use-npm-as-a-build-tool/)
 * [Browserify](http://browserify.org/)
+* [Babel](https://babeljs.io/)
 * [Stylus](http://stylus-lang.com/)
 * [Lost Grid](https://github.com/peterramsing/lost)
 * [Rupture](https://github.com/jescalan/rupture)

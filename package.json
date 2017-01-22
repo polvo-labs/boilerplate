@@ -2,8 +2,8 @@
   "name": "boilerplate",
   "private": true,
   "scripts": {
-    "js": "browserify source/js/index.js -o public/js/bundle.min.js",
-    "js:watch": "watchify source/js/index.js -o \"exorcist public/js/bundle.min.js.map > public/js/bundle.min.js\" -v -d",
+    "js": "browserify source/js/index.js -o public/js/bundle.min.js -t [ babelify --presets [ es2015 ] ]",
+    "js:watch": "watchify source/js/index.js -o \"exorcist public/js/bundle.min.js.map > public/js/bundle.min.js\" -v -d -t [ babelify --presets [ es2015 ] ]",
     "js:prod": "npm run js -- -d -p [minifyify --map=bundle.map --output public/js/bundle.map]",
     "js:lint": "standard \"source/js/**/*.js\" --verbose | snazzy",
     "js:clear": "del-cli \"public/js/**/*\"",
@@ -44,6 +44,8 @@
   },
   "devDependencies": {
     "autoprefixer-stylus": "^0.10.0",
+    "babel-preset-es2015": "^6.22.0",
+    "babelify": "^7.3.0",
     "browser-sync": "^2.16.0",
     "browserify": "^13.1.0",
     "copy": "github:gsantiago/copy",
