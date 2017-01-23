@@ -71,10 +71,6 @@ It runs [Browserify](http://browserify.org/) with minifiyify for compression and
 
 It runs [Watchify](https://github.com/substack/watchify).
 
-### `js:clear`
-
-Clear all files from `public/js`.
-
 ### `css`
 
 It runs Stylus.
@@ -83,10 +79,6 @@ It runs Stylus.
 
 It runs Stylus with compression and autoprefixer.
 
-### `css:clear`
-
-Clear all files from `public/css/`;
-
 ### `img`
 
 It just copy your images from your source.
@@ -94,19 +86,3 @@ It just copy your images from your source.
 ### `img:prod`
 
 Compress your images before copying.
-
-### `img:clear`
-
-Clear all files from dest folder (public/img/).
-
-### `styleguide`
-
-Generate Styleguide in `public/styleguide`
-
-## css guide
-
-TODO
-
-## js guide
-
-TODO
