@@ -2,9 +2,9 @@
   "name": "boilerplate",
   "private": true,
   "scripts": {
-    "js": "browserify source/js/index.js -o public/js/bundle.min.js -t [ babelify --presets [ es2015 ] ]",
-    "js:watch": "watchify source/js/index.js -o \"exorcist public/js/bundle.min.js.map > public/js/bundle.min.js\" -v -d -t [ babelify --presets [ es2015 ] ]",
-    "js:prod": "npm run js -- -d -p [minifyify --map=bundle.map --output public/js/bundle.map]",
+    "js": "simplifyify \"source/js/index.js\" -o \"public/js/bundle.min.js\" -d",
+    "js:watch": "npm run js -- --watch",
+    "js:prod": "npm run js -- --minify",
     "js:lint": "standard \"source/js/**/*.js\" --verbose | snazzy",
     "css": "stylus -m source/css/index.styl --include-css -I node_modules -o public/css/style.min.css -u rupture -u poststylus --with \"['lost']\"",
     "css:autoprefixer": "npm run css -- -u autoprefixer-stylus --with \"{browsers: ['> 1%']}\"",
@@ -40,27 +40,34 @@
       "$"
     ]
   },
+  "browserify": {
+    "transform": [
+      [
+        "babelify",
+        {
+          "presets": ["es2015"]
+        }
+      ]
+    ]
+  },
   "devDependencies": {
     "autoprefixer-stylus": "^0.10.0",
     "babel-preset-es2015": "^6.22.0",
     "babelify": "^7.3.0",
     "browser-sync": "^2.16.0",
-    "browserify": "^13.1.0",
     "copy": "github:gsantiago/copy",
     "csso-stylus": "0.0.3",
-    "exorcist": "^0.4.0",
     "imagemin-cli": "^3.0.0",
     "lost": "^7.1.0",
     "lost-stylus": "^0.1.2",
-    "minifyify": "^7.3.3",
     "npm-watch": "^0.1.6",
     "parallelshell": "^2.0.0",
     "poststylus": "^0.2.3",
     "rupture": "^0.6.1",
+    "simplifyify": "^3.2.1",
     "snazzy": "^5.0.0",
     "standard": "^8.1.0",
-    "stylus": "^0.54.5",
-    "watchify": "^3.7.0"
+    "stylus": "^0.54.5"
   },
   "dependencies": {
     "normalize.css": "^4.2.0"
