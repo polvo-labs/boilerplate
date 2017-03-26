@@ -1,5 +1,5 @@
-import HelloWorld from './components/hello-world'
+/**
+ * Components.
+ */
 
-const helloWorld = new HelloWorld()
-
-console.log(helloWorld)
+import './components/form'

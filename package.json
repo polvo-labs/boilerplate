@@ -45,7 +45,9 @@
       [
         "babelify",
         {
-          "presets": ["es2015"]
+          "presets": [
+            "es2015"
+          ]
         }
       ]
     ]
@@ -70,6 +72,8 @@
     "stylus": "^0.54.5"
   },
   "dependencies": {
+    "jquery": "^3.2.1",
+    "jquery-validation": "^1.16.0",
     "normalize.css": "^4.2.0"
   }
 }

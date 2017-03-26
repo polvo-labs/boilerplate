@@ -14,60 +14,117 @@
 // ---------------
 
 ._clearfix
-  lost-utility clearfix
+  lost-utility: clearfix
 
 // Color helpers
 // -------------
 
 for key, val in $color
   ._color-{key}
-    color: val
+    color: val !important
 
   ._bg-color-{key}
-    background-color: val
+    background-color: val !important
 
 // Display helpers
 // ---------------
 
 ._block
-  display block
+  display: block !important
 
 ._none
-  display none
+  display: none !important
 
 ._inline-block
-  display inline-block
+  display: inline-block !important
+
+// Responsive helpers
+// ------------------
+
+._responsive
+  max-width: 100%
+  height: auto
 
 // Visibility helpers
 // ------------------
 
 ._hidden
-  visibility hidden
+  visibility: hidden !important
 
 ._visible
-  visibility visible
+  visibility: visible !important
 
 // Position helpers
 // ----------------
 
 ._relative
-  position relative
+  position: relative !important
 
 // Text alignment helpers
 // ----------------------
 
 ._text-left
-  text-align left
+  text-align: left !important
 
 ._text-right
-  text-align right
+  text-align: right !important
 
 ._text-center
-  text-align center
+  text-align: center !important
 
 // Font family helpers
 // -------------------
 
 for key, val in $font-family
   ._font-family-{key}
-    font-family: val
+    font-family: val !important
+
+// Margin and padding helpers
+// --------------------------
+
+for key, val in $spacing
+  ._margin-{key}
+    margin: val !important
+
+  ._margin-top-{key}
+    margin-top: val !important
+
+  ._margin-bottom-{key}
+    margin-bottom: val !important
+
+  ._margin-left-{key}
+    margin-left: val !important
+
+  ._margin-right-{key}
+    margin-right: val !important
+
+  ._margin-vertical-{key}
+    margin-top: val !important
+    margin-bottom: val !important
+
+  ._margin-horizontal-{key}
+    margin-left: val !important
+    margin-right: val !important
+
+  ._padding-{key}
+    padding: val !important
+
+  ._padding-top-{key}
+    padding-top: val !important
+
+  ._padding-bottom-{key}
+    padding-bottom: val !important
+
+  ._padding-left-{key}
+    padding-left: val !important
+
+  ._padding-right-{key}
+    padding-right: val !important
+
+  ._padding-vertical-{key}
+    padding-top: val !important
+    padding-bottom: val !important
+
+  ._padding-horizontal-{key}
+    padding-left: val !important
+    padding-right: val !important
