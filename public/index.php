@@ -103,6 +103,29 @@
     </div>
   </section>
 
+  <section class="section-content _bg-color-gray-light">
+    <div class="container">
+      <h2 class="heading-main">Icons</h2>
+
+      <?php
+        $icons = [
+          'home', 'image', 'film', 'location', 'clock', 'spinner',
+          'menu', 'cross', 'checkmark', 'circle-up', 'circle-right',
+          'circle-down', 'circle-left', 'google-plus', 'facebook',
+          'instagram', 'whatsapp', 'twitter', 'youtube', 'linkedin'
+        ];
+      ?>
+
+      <div class="row _font-size-x-large _text-center">
+        <?php foreach ($icons as $icon) : ?>
+          <div class="col-sm-2 _margin-bottom-medium">
+            <i class="icon-<?= $icon ?>"></i>
+          </div>
+        <?php endforeach ?>
+      </div>
+    </div>
+  </section>
+
   <script src="js/bundle.min.js"></script>
 </body>
 </html>
