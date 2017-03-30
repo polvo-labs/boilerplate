@@ -497,6 +497,42 @@ textarea {
 ._bg-color-gray-light {
   background-color: #eee !important;
 }
+._color-gray-medium {
+  color: #ddd !important;
+}
+._bg-color-gray-medium {
+  background-color: #ddd !important;
+}
+._color-gray-dark {
+  color: #aaa !important;
+}
+._bg-color-gray-dark {
+  background-color: #aaa !important;
+}
+._color-gray-x-dark {
+  color: #666 !important;
+}
+._bg-color-gray-x-dark {
+  background-color: #666 !important;
+}
+._color-gray-x-x-dark {
+  color: #333 !important;
+}
+._bg-color-gray-x-x-dark {
+  background-color: #333 !important;
+}
+._color-white {
+  color: #fff !important;
+}
+._bg-color-white {
+  background-color: #fff !important;
+}
+._color-black {
+  color: #000 !important;
+}
+._bg-color-black {
+  background-color: #000 !important;
+}
 ._block {
   display: block !important;
 }
@@ -2132,6 +2168,48 @@ p {
 .ui-button.-gray-light:hover:not([disabled]),
 .ui-button.-gray-light:active:not([disabled]) {
   background-color: #cacaca;
+}
+.ui-button.-gray-medium {
+  background-color: #ddd;
+}
+.ui-button.-gray-medium:hover:not([disabled]),
+.ui-button.-gray-medium:active:not([disabled]) {
+  background-color: #bcbcbc;
+}
+.ui-button.-gray-dark {
+  background-color: #aaa;
+}
+.ui-button.-gray-dark:hover:not([disabled]),
+.ui-button.-gray-dark:active:not([disabled]) {
+  background-color: #909090;
+}
+.ui-button.-gray-x-dark {
+  background-color: #666;
+}
+.ui-button.-gray-x-dark:hover:not([disabled]),
+.ui-button.-gray-x-dark:active:not([disabled]) {
+  background-color: #575757;
+}
+.ui-button.-gray-x-x-dark {
+  background-color: #333;
+}
+.ui-button.-gray-x-x-dark:hover:not([disabled]),
+.ui-button.-gray-x-x-dark:active:not([disabled]) {
+  background-color: #2b2b2b;
+}
+.ui-button.-white {
+  background-color: #fff;
+}
+.ui-button.-white:hover:not([disabled]),
+.ui-button.-white:active:not([disabled]) {
+  background-color: #d9d9d9;
+}
+.ui-button.-black {
+  background-color: #000;
+}
+.ui-button.-black:hover:not([disabled]),
+.ui-button.-black:active:not([disabled]) {
+  background-color: #000;
 }
 .ui-button.-block {
   display: block;

@@ -9,6 +9,8 @@
 </head>
 <body>
 
+  <h1 class="_text-center _bg-color-primary _color-white _padding-large _margin-none">Polvo Boilerplate</h1>
+
   <section class="section-content">
     <div class="container">
       <h2 class="heading-main">Grid</h2>
@@ -123,6 +125,29 @@
           </div>
         <?php endforeach ?>
       </div>
+    </div>
+  </section>
+
+  <section class="section-content" id="colors">
+    <div class="container">
+      <h2 class="heading-main">Colors</h2>
+        <?php
+        $colors = [
+          'primary', 'success', 'warning', 'info', 'danger',
+          'gray-light', 'gray-medium', 'gray-dark', 'gray-x-dark', 'gray-x-x-dark',
+          'white', 'black',
+          'facebook', 'twitter', 'google', 'linkedin', 'youtube'
+        ];
+        ?>
+
+        <div class="row">
+          <?php foreach ($colors as $color) : ?>
+            <div class="col-xs-3 _margin-bottom-large _text-center">
+              <strong><?= $color ?></strong>
+              <div class="_padding-large  _bg-color-<?= $color ?>"></div>
+            </div>
+          <?php endforeach ?>
+        </div>
     </div>
   </section>
 
