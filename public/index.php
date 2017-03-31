@@ -270,6 +270,43 @@
     </div>
   </section>
 
+  <section class="section-content">
+    <div class="container">
+      <h2 class="heading-main">Input / Button Alignment</h2>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="ui-control">
+            <input type="text" class="ui-input">
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="ui-control">
+            <button class="ui-button -success -block">Button</button>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="ui-control">
+            <div class="ui-select">
+              <select name="" id="" class="ui-input">
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="ui-control">
+            <button class="ui-button -primary -circular">
+              <i class="icon-checkmark"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="section-content _bg-color-gray-light">
     <div class="container">
       <h2 class="heading-main">Icons</h2>
