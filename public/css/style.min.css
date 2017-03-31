@@ -2247,7 +2247,7 @@ p {
   line-height: 0;
   position: relative;
 }
-.ui-button.-circular > $icon-selector {
+.ui-button.-circular > [class^="icon-"] {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -2261,6 +2261,26 @@ p {
   color: #f00;
   font-size: 12px;
   margin-top: 3px;
+}
+.ui-icon {
+  position: relative;
+}
+.ui-icon > [class^="icon-"] {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.ui-icon:not(.-right) > [class^="icon-"] {
+  left: 10px;
+}
+.ui-icon:not(.-right) .ui-input {
+  padding-left: 30px;
+}
+.ui-icon.-right > [class^="icon-"] {
+  right: 10px;
+}
+.ui-icon.-right > .ui-input {
+  padding-right: 30px;
 }
 .ui-input {
   display: block;

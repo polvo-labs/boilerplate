@@ -1,0 +1,21 @@
+.ui-icon
+  position: relative
+
+.ui-icon > {$icon-selector}
+  position: absolute
+  top: 50%
+  transform: translateY(-50%)
+
+.ui-icon:not(.-right)
+  > {$icon-selector}
+    left: 10px
+
+  .ui-input
+    padding-left: 30px
+
+.ui-icon.-right
+  > {$icon-selector}
+    right: 10px
+
+  > .ui-input
+    padding-right: 30px

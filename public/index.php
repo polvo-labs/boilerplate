@@ -43,6 +43,76 @@
 
   <section class="section-content _bg-color-gray-light">
     <div class="container">
+      <h2 class="heading-main">Input</h2>
+
+      <div class="row">
+        <div class="col-xs-12 col-md-6 col-md-offset-3">
+          <div class="ui-control">
+            <label for="input_id" class="ui-label">Your label:</label>
+            <input type="text" class="ui-input" placeholder="Your input" id="input_id">
+          </div>
+          <div class="ui-control">
+            <label for="input_id" class="ui-label">With icons:</label>
+            <div class="ui-icon">
+              <input type="text" class="ui-input" placeholder="Your input" id="input_id">
+              <i class="icon-home"></i>
+            </div>
+          </div>
+          <div class="ui-control">
+            <label for="input_id" class="ui-label">With icons to the right:</label>
+            <div class="ui-icon -right">
+              <input type="text" class="ui-input" placeholder="Your input" id="input_id">
+              <i class="icon-home"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-content _bg-color-gray-light">
+    <div class="container">
+      <h2 class="heading-main">Select</h2>
+
+      <div class="row">
+        <div class="col-xs-12 col-md-6 col-md-offset-3">
+          <div class="ui-control">
+            <label for="select" class="ui-label">Custom select:</label>
+            <div class="ui-select">
+              <select name="select" class="ui-input" id="select">
+                <option value disabled selected>Select your option</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+                <option value="4">Option 4</option>
+                <option value="5">Option 5</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="ui-control">
+            <label for="select" class="ui-label">Custom select only supports icons in the left:</label>
+            <div class="ui-icon">
+              <div class="ui-select">
+                <select name="select" class="ui-input" id="select">
+                  <option value disabled selected>Select your option</option>
+                  <option value="1">Option 1</option>
+                  <option value="2">Option 2</option>
+                  <option value="3">Option 3</option>
+                  <option value="4">Option 4</option>
+                  <option value="5">Option 5</option>
+                </select>
+              </div>
+              <i class="icon-location"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-content _bg-color-gray-light">
+    <div class="container">
       <h2 class="heading-main">Form</h2>
       <div class="row">
         <div class="col-xs-12 col-sm-6 col-sm-offset-3">
