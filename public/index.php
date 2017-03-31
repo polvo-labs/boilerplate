@@ -138,7 +138,7 @@
         For default buttons:
       </p>
 
-      <p class="_text-center">
+      <p>
         <button class="ui-button -primary -small">Small</button>
         <button class="ui-button -primary">Default Size</button>
         <button class="ui-button -primary -large">Large</button>
@@ -148,7 +148,7 @@
         For circular buttons:
       </p>
 
-      <p class="_text-center">
+      <p>
         <button class="ui-button -circular -success -small">
           <i class="icon-clock"></i>
         </button>

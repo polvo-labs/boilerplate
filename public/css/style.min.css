@@ -2266,11 +2266,15 @@ p {
   display: block;
   width: 100%;
   background-color: #fff;
-  padding: 5px;
+  padding: 7px;
   font-size: 16px;
+  border: 1px solid #aaa;
+  border-radius: 3px;
 }
 select.ui-input {
   cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
 }
 .ui-label {
   display: block;
@@ -2282,5 +2286,20 @@ select.ui-input {
 }
 .ui-link:hover {
   color: #1d6ca1;
+}
+.ui-select {
+  position: relative;
+}
+.ui-select::after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 7px 7.5px 0 7.5px;
+  border-color: #666 transparent transparent transparent;
 }
 /*# sourceMappingURL=style.min.css.map */
