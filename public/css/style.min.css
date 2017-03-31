@@ -2277,6 +2277,7 @@ p {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  pointer-events: none;
 }
 .ui-icon:not(.-right) > [class^="icon-"] {
   left: 10px;
@@ -2301,8 +2302,6 @@ p {
 }
 select.ui-input {
   cursor: pointer;
-  appearance: none;
-  -webkit-appearance: none;
 }
 .ui-label {
   display: block;
@@ -2329,5 +2328,11 @@ select.ui-input {
   border-style: solid;
   border-width: 7px 7.5px 0 7.5px;
   border-color: #666 transparent transparent transparent;
+  pointer-events: none;
+}
+.ui-select select.ui-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 /*# sourceMappingURL=style.min.css.map */
