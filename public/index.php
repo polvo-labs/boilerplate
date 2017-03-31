@@ -181,6 +181,25 @@
 
   <section class="section-content">
     <div class="container">
+      <h2 class="heading-main">Buttons with icons</h2>
+      <p class="_text-center">
+        <button class="ui-button -success">
+          <i class="icon-checkmark"></i>
+          Confirm
+        </button>
+        <button class="ui-button -danger">
+          <i class="icon-cross"></i>
+          Cancel
+        </button>
+        <button class="ui-button -warning">
+          Without icon
+        </button>
+      </p>
+    </div>
+  </section>
+
+  <section class="section-content">
+    <div class="container">
       <h2 class="heading-main">Circular Buttons</h2>
       <p>
         Use the `.-circular` modifier to get circular buttons. Obviously, it only supports icons as content.
@@ -212,6 +231,25 @@
         <button class="ui-button -primary -small">Small</button>
         <button class="ui-button -primary">Default Size</button>
         <button class="ui-button -primary -large">Large</button>
+      </p>
+
+      <p>
+        For default buttons with icons:
+      </p>
+
+      <p>
+        <button class="ui-button -primary -small">
+          <i class="icon-home"></i>
+          Small
+        </button>
+        <button class="ui-button -primary">
+          <i class="icon-home"></i>
+          Default Size
+        </button>
+        <button class="ui-button -primary -large">
+          <i class="icon-home"></i>
+          Large
+        </button>
       </p>
 
       <p>
