@@ -293,6 +293,16 @@
     </div>
   </section>
 
+  <section class="section-content _bg-color-gray-light">
+    <div class="container">
+      <h2 class="heading-main">Animated Icons</h2>
+
+      <div class="_text-center _font-size-x-large _text-center">
+        <i class="icon-spinner -spin"></i>
+      </div>
+    </div>
+  </section>
+
   <section class="section-content" id="colors">
     <div class="container">
       <h2 class="heading-main">Colors</h2>

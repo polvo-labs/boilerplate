@@ -24,6 +24,20 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
+
+{$icon-selector}.-spin {
+  display: inline-block
+  animation: spin 2s infinite linear;
+}
+
 .icon-home:before {
   content: "\e902";
 }
