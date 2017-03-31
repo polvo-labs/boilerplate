@@ -2221,6 +2221,38 @@ p {
     width: 100%;
   }
 }
+.ui-button:not(.-circular).-small {
+  padding: 5px 15px;
+  font-size: 14px;
+}
+.ui-button:not(.-circular).-large {
+  padding: 15px 50px;
+  font-size: 24px;
+}
+.ui-button.-circular.-small {
+  width: 30px;
+  height: 30px;
+  font-size: 12px;
+}
+.ui-button.-circular.-large {
+  width: 60px;
+  height: 60px;
+  font-size: 30px;
+}
+.ui-button.-circular {
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  line-height: 0;
+  position: relative;
+}
+.ui-button.-circular > $icon-selector {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 .ui-control + .ui-control {
   margin-top: 20px;
 }

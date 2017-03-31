@@ -77,6 +77,10 @@
     <div class="container">
       <h2 class="heading-main">Buttons</h2>
 
+      <p>
+        The buttons supports all colors from <a href="#colors" class="ui-link">Colors</a>.
+      </p>
+
       <p class="_text-center">
         <button class="ui-button -primary">Primary</button>
         <button class="ui-button -success">Success</button>
@@ -105,6 +109,59 @@
     </div>
   </section>
 
+  <section class="section-content">
+    <div class="container">
+      <h2 class="heading-main">Circular Buttons</h2>
+      <p>
+        Use the `.-circular` modifier to get circular buttons. Obviously, it only supports icons as content.
+      </p>
+
+      <p class="_text-center">
+        <button class="ui-button -circular -facebook">
+          <i class="icon-facebook"></i>
+        </button>
+        <button class="ui-button -circular -twitter">
+          <i class="icon-twitter"></i>
+        </button>
+        <button class="ui-button -circular -google">
+          <i class="icon-google-plus"></i>
+        </button>
+      </p>
+    </div>
+  </section>
+
+  <section class="section-content">
+    <div class="container">
+      <h2 class="heading-main">Button Sizes</h2>
+
+      <p>
+        For default buttons:
+      </p>
+
+      <p class="_text-center">
+        <button class="ui-button -primary -small">Small</button>
+        <button class="ui-button -primary">Default Size</button>
+        <button class="ui-button -primary -large">Large</button>
+      </p>
+
+      <p>
+        For circular buttons:
+      </p>
+
+      <p class="_text-center">
+        <button class="ui-button -circular -success -small">
+          <i class="icon-clock"></i>
+        </button>
+        <button class="ui-button -circular -success">
+          <i class="icon-clock"></i>
+        </button>
+        <button class="ui-button -circular -success -large">
+          <i class="icon-clock"></i>
+        </button>
+      </p>
+    </div>
+  </section>
+
   <section class="section-content _bg-color-gray-light">
     <div class="container">
       <h2 class="heading-main">Icons</h2>
@@ -120,7 +177,7 @@
 
       <div class="row _font-size-x-large _text-center">
         <?php foreach ($icons as $icon) : ?>
-          <div class="col-sm-2 _margin-bottom-medium">
+          <div class="col-sm-2 col-xs-4 _margin-bottom-medium">
             <i class="icon-<?= $icon ?>"></i>
           </div>
         <?php endforeach ?>

@@ -41,3 +41,42 @@ for key, val in $color
   +below($bp.sm)
     display: block
     width: 100%
+
+// Sizes
+// -----
+
+.ui-button:not(.-circular).-small
+  padding: 5px 15px
+  font-size: $font-size.small
+
+.ui-button:not(.-circular).-large
+  padding: 15px 50px
+  font-size: $font-size.large
+
+.ui-button.-circular.-small
+  width: 30px
+  height: 30px
+  font-size: $font-size.x-small
+
+.ui-button.-circular.-large
+  width: 60px
+  height: 60px
+  font-size: $font-size.x-large
+
+
+// Circular Buttons
+// ----------------
+
+.ui-button.-circular
+  padding: 0
+  width: 40px
+  height: 40px
+  border-radius: 100%
+  line-height: 0
+  position: relative
+
+  > {$icon-selector}
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
