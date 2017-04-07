@@ -3,9 +3,10 @@
  */
 
 import $ from 'jquery'
+import extractDataOptions from 'extract-data-options'
+import customAlert from '../utils/customAlert'
 import 'jquery-validation'
 import '../localization/validation'
-import extractDataOptions from 'extract-data-options'
 
 /**
  * Get all `.js-form` elements.
@@ -62,10 +63,11 @@ export default function createForm ($form, options = {}) {
 
       $.ajax({url, method, data, dataType: 'json'})
         .done(response => {
-          console.log('AJAX response:', response)
+          feedbackHandler(response)
         })
         .fail(err => {
-          console.log('AJAX fail:', err)
+          feedbackHandler({message: 'Erro ao processar dados!'})
+          console.log('ajax error:', err)
         })
         .always(() => {
           if (settings.disableButtonOnSubmit) {
@@ -76,4 +78,19 @@ export default function createForm ($form, options = {}) {
         })
     }
   })
+}
+
+/**
+ * feedbackHandler
+ */
+
+function feedbackHandler (feedback) {
+  const type = feedback.success
+    ? 'success'
+    : 'error'
+
+  const title = feedback.title || ''
+  const text = feedback.message
+
+  customAlert({type, title, text})
 }

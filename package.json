@@ -75,6 +75,7 @@
     "extract-data-options": "0.0.1",
     "jquery": "^3.2.1",
     "jquery-validation": "^1.16.0",
-    "normalize.css": "^4.2.0"
+    "normalize.css": "^4.2.0",
+    "sweetalert2": "^6.5.6"
   }
 }
