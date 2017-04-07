@@ -116,7 +116,7 @@
       <h2 class="heading-main">Form</h2>
       <div class="row">
         <div class="col-xs-12 col-sm-6 col-sm-offset-3">
-          <form action="" class="js-form">
+          <form action="inc/api.php" class="js-form" method="GET" data-form-ajax="true">
             <div class="ui-control">
               <label for="name" class="ui-label">Name:</label>
               <input type="text" name="name" class="ui-input" id="name" required>
@@ -135,7 +135,7 @@
               </div>
             </div>
             <div class="ui-control _text-right">
-              <button class="ui-button -primary -block--sm">Submit</button>
+              <button type="submit" class="ui-button -primary -block--sm">Submit</button>
             </div>
           </form>
         </div>
